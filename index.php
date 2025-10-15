@@ -13,6 +13,16 @@
 
 <body style="background-color: whitesmoke;">
 
+<!-- Section: Carousel -->
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/gerbang.png" class="d-block w-100" alt="Gerbang Sekolah" />
+      </div>
+    </div>
+  </div>
+  <!-- End Section: Carousel -->
+
   <!-- Navbar -->
   <?php include 'navbar.php'; ?>
 

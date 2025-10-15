@@ -17,12 +17,12 @@
   <!-- SECTION GALERI -->
   <?php
   $galeri = [
-    'galeri/ri1.JPG',
-    'galeri/ri2.JPG',
-    'galeri/ri3.JPG',
-    'galeri/ri4.JPG',
-    'galeri/ri5.JPG',
-    'galeri/ri6.JPG'
+    'img/ri1.JPG',
+    'img/ri2.JPG',
+    'img/ri3.JPG',
+    'img/ri4.JPG',
+    'img/ri5.JPG',
+    'img/ri6.JPG'
   ];
   $i = 0;
   ?>
@@ -53,12 +53,12 @@
 
   <?php
   $galeri = [
-    'galeri/mbg.JPG',
-    'galeri/mbg1.JPG',
-    'galeri/mbg2.JPG',
-    'galeri/mbg3.JPG',
-    'galeri/mbg4.JPG',
-    'galeri/mbg5.JPG'
+    'img/m1.JPG',
+    'img/m2.JPG',
+    'img/m3.JPG',
+    'img/m4.JPG',
+    'img/m5.JPG',
+    'img/m6.JPG'
   ];
   $i = 0;
   ?>
@@ -84,6 +84,44 @@
   </section>
 
   <!-- TUTUP GALERI 2 -->
+
+
+  <!-- SECTION GALERI 3 -->
+
+  <?php
+  $galeri = [
+    'img/ls1.jpg',
+    'img/ls2.jpg',
+    'img/ls3.jpg',
+    'img/ls4.jpg',
+    'img/ls5.jpg',
+    'img/ls6.jpg'
+  ];
+  $i = 0;
+  ?>
+  <section>
+    <div class="container p-4 mt-5 my-5">
+      <div class="row">
+        <h3 class="mb-0 my-5 "></h3>
+        <div class="card">
+          <div class="col-lg-12">
+            <h3 class="text-center"></h3>
+            <hr>
+            <div class="row m-3">
+              <?php while ($i < count($galeri)): ?>
+                <div class="col-lg-4">
+                  <img src="<?= $galeri[$i] ?>" class="img-fluid rounded">
+                </div>
+                <?php $i++; ?>
+              <?php endwhile; ?>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- TUTUP GALERI 3 -->
+
 
 
 
