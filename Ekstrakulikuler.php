@@ -15,52 +15,82 @@
       <?php include 'navbar.php';?>
 
  <!-- SECTION ESKUL -->
-     <section>
-        <div class="container pt-5 mt-3">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="card border-0">
-                        <h3 class="mb-0">Ekstrakurrikuler</h3>
-                        <h3 class="text-primary ">Siswa</h3>
-                        <div class="row">
-                            <?php
-                            $eskul = [
-                                ["nama" => "PASKIBRA" , "gambar" => "img/paskibra.png"],
-                                ["nama" => "Pramuka" , "gambar" => "img/pramuka.png"],
-                                ["nama" => "PMR" , "gambar" => "img/pmr (1).png"],
-                                ["nama" => "PLH" , "gambar" => "img/plh.png"],
-                                ["nama" => "IT Club" , "gambar" => "img/ITclub.png"],
-                                ["nama" => "PKS" , "gambar" => "img/pks.png"],
-                                ["nama" => "Perisai Diri" , "gambar" => "img/perisai diri.jpg"],
-                                ["nama" => "English Club" , "gambar" => "img/englishclub.png"],
-                                ["nama" => "Cinematography" , "gambar" => "img/Cinematography.png"],
-                                ["nama" => "Laskar Pustaka" , "gambar" => "img/laskar.png"],
-                                ["nama" => "IRMA" , "gambar" => "img/irma.png"],
-                                ["nama" => "Bulu Tangkis" , "gambar" => "img/tangkis.png"],
-                                ["nama" => "Futsal" , "gambar" => "img/futsal.png"],
-                                ["nama" => "Basket" , "gambar" => "img/basket.png"],
-                                ["nama" => "Voli" , "gambar" => "img/voli.jpeg"],
-                                ["nama" => "Sepak bola" , "gambar" => "img/sepakbola.jpeg"],
-                               
-                            ];
+<section>
+  <div class="container pt-5 mt-3">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card border-0">
+          <h3 class="mb-0">Ekstrakurikuler</h3>
+          <h3 class="text-primary">Siswa</h3>
 
-                            foreach ($eskul as $item) { ?>
-                            <div class="col-lg-4">
-                                <div class="card shadow rounded m-3 p-4 d-flex align-items-center">
-                                    <img src="<?= $item['gambar']; ?>" alt="" width="150" height="150">
-                                <div class="card-body  border-0">
-                                       <h4><?= $item['nama']; ?></h4>
-                                </div>
-                                </div>
-                            </div>
-                            <?php } ?>
-                        </div>
-                    </div>
+          <!-- SEARCH BAR -->
+          <input type="text" id="searchEskul" class="form-control my-3" placeholder="Cari eskul...">
+
+          <div class="row" id="eskulList">
+            <?php
+            $eskul = [
+              ["nama" => "PASKIBRA" , "gambar" => "img/paskibra.png"],
+              ["nama" => "Pramuka" , "gambar" => "img/pramuka.png"],
+              ["nama" => "PMR" , "gambar" => "img/pmr (1).png"],
+              ["nama" => "PLH" , "gambar" => "img/plh.png"],
+              ["nama" => "IT Club" , "gambar" => "img/ITclub.png"],
+              ["nama" => "PKS" , "gambar" => "img/pks.png"],
+              ["nama" => "Perisai Diri" , "gambar" => "img/perisai diri.jpg"],
+              ["nama" => "English Club" , "gambar" => "img/englishclub.png"],
+              ["nama" => "Cinematography" , "gambar" => "img/Cinematography.png"],
+              ["nama" => "Laskar Pustaka" , "gambar" => "img/laskar.png"],
+              ["nama" => "IRMA" , "gambar" => "img/irma.png"],
+              ["nama" => "Bulu Tangkis" , "gambar" => "img/tangkis.png"],
+              ["nama" => "Futsal" , "gambar" => "img/futsal.png"],
+              ["nama" => "Basket" , "gambar" => "img/basket.png"],
+              ["nama" => "Voli" , "gambar" => "img/voli.jpeg"],
+              ["nama" => "Sepak bola" , "gambar" => "img/sepakbola.jpeg"],
+            ];
+
+            foreach ($eskul as $item) { ?>
+              <div class="col-lg-4 eskul-item">
+                <div class="card shadow rounded m-3 p-4 d-flex align-items-center">
+                  <img src="<?= $item['gambar']; ?>" alt="" width="150" height="150">
+                  <div class="card-body border-0">
+                    <h4 class="eskul-name"><?= $item['nama']; ?></h4>
+                  </div>
                 </div>
-            </div>
-        </div>
-     </section>
-    <!-- TUTUP SECTION ESKUL -->
+              </div>
+            <?php } ?>
+          </div>
 
- </body>
- </html>
+          <!-- Jika tidak ada hasil -->
+          <p id="noResult" class="text-center text-muted mt-3" style="display:none;">Tidak ada ekstrakurikuler ditemukan.</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCRIPT SEARCH -->
+<script>
+  const searchInput = document.getElementById('searchEskul');
+  const items = document.querySelectorAll('.eskul-item');
+  const noResult = document.getElementById('noResult');
+
+  searchInput.addEventListener('keyup', function() {
+    const filter = searchInput.value.toLowerCase();
+    let visibleCount = 0;
+
+    items.forEach(item => {
+      const name = item.querySelector('.eskul-name').textContent.toLowerCase();
+      if (name.includes(filter)) {
+        item.style.display = 'block';
+        visibleCount++;
+      } else {
+        item.style.display = 'none';
+      }
+    });
+
+    noResult.style.display = visibleCount === 0 ? 'block' : 'none';
+  });
+</script>
+
+</body>
+</html>
