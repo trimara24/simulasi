@@ -26,15 +26,21 @@
                             <?php
                             $eskul = [
                                 ["nama" => "PASKIBRA" , "gambar" => "img/paskibra.png"],
-                                ["nama" => "PASKIBRA" , "gambar" => "img/paskibra.png"],
-                                ["nama" => "PASKIBRA" , "gambar" => "img/paskibra.png"],
-                                ["nama" => "PASKIBRA" , "gambar" => "img/paskibra.png"],
-                                ["nama" => "PASKIBRA" , "gambar" => "img/paskibra.png"],
-                                ["nama" => "PASKIBRA" , "gambar" => "img/paskibra.png"],
-                                ["nama" => "PASKIBRA" , "gambar" => "img/paskibra.png"],
-                                ["nama" => "PASKIBRA" , "gambar" => "img/paskibra.png"],
-                                ["nama" => "PASKIBRA" , "gambar" => "img/paskibra.png"],
-                                ["nama" => "PASKIBRA" , "gambar" => "img/paskibra.png"],
+                                ["nama" => "Pramuka" , "gambar" => "img/pramuka.png"],
+                                ["nama" => "PMR" , "gambar" => "img/pmr (1).png"],
+                                ["nama" => "PLH" , "gambar" => "img/plh.png"],
+                                ["nama" => "IT Club" , "gambar" => "img/ITclub.png"],
+                                ["nama" => "PKS" , "gambar" => "img/pks.png"],
+                                ["nama" => "Perisai Diri" , "gambar" => "img/perisai diri.jpg"],
+                                ["nama" => "English Club" , "gambar" => "img/englishclub.png"],
+                                ["nama" => "Cinematography" , "gambar" => "img/Cinematography.png"],
+                                ["nama" => "Laskar Pustaka" , "gambar" => "img/laskar.png"],
+                                ["nama" => "IRMA" , "gambar" => "img/irma.png"],
+                                ["nama" => "Bulu Tangkis" , "gambar" => "img/tangkis.png"],
+                                ["nama" => "Futsal" , "gambar" => "img/futsal.png"],
+                                ["nama" => "Basket" , "gambar" => "img/basket.png"],
+                                ["nama" => "Voli" , "gambar" => "img/voli.jpeg"],
+                                ["nama" => "Sepak bola" , "gambar" => "img/sepakbola.jpeg"],
                                
                             ];
 

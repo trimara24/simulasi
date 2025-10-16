@@ -17,7 +17,7 @@
     <section>
        <div class="container px-5 mt-3">
         <div class="row">
-            <div class="col-lg-12 ">
+            <div class="col-12 ">
                 <h3 class="mb-0 my-5 ">Identitas</h3>
                 <h3 class="text-primary">Sekolah</h3>
                 <div class="row ">
@@ -28,13 +28,13 @@
                     </div>
                 </div>
                 <div class="row mt-3 shadow-sm rounded-4 ">
-                    <div class="col-lg-4 mt-2 ">
+                    <div class="col-4 mt-2 ">
                         <div class="card mx-4 border-0">
                             <p>Nama Sekolah</p>
                             <p>NPSN</p>
                             <p>Alamat</p>
                             <br>
-                            <p>Telp/faks</p>1
+                            <p>Telp/faks</p>
                             <p>Email</p>
                             <p>Tahun Berdiri/Beroperasi</p>
                             <p>Nomor SK Pendirian</p>
@@ -42,7 +42,7 @@
                             <p>Kepemilikan</p>
                         </div>
                     </div>
-                    <div class="col-lg-2 mt-2 ">
+                    <div class="col-2 mt-2 ">
                         <div class="card  mx-4 border-0">
                             <p>:</p>
                             <p>:</p>
@@ -56,7 +56,7 @@
                             <p>:</p>
                         </div>
                     </div>
-                    <div class="col-lg-6 mt-2 ">
+                    <div class="col-6 mt-2 ">
                         <div class="card  mx-2 border-0">
                             <p>SMK Negeri 4 Kota Tasikmalaya</p>
                             <p>20276063</p>

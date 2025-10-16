@@ -16,14 +16,18 @@
   <?php include 'navbar.php'; ?>
   <!-- SECTION GALERI -->
   <?php
-  $galeri = [
+  function getImages()
+  {
+    return[
     'img/ri1.JPG',
     'img/ri2.JPG',
     'img/ri3.JPG',
     'img/ri4.JPG',
     'img/ri5.JPG',
     'img/ri6.JPG'
-  ];
+    ];
+  }
+  $galeri = getImages();
   $i = 0;
   ?>
   <section>
@@ -105,7 +109,7 @@
         <h3 class="mb-0 my-5 "></h3>
         <div class="card">
           <div class="col-lg-12">
-            <h3 class="text-center"></h3>
+            <h3 class="text-center">MPLS 2025</h3>
             <hr>
             <div class="row m-3">
               <?php while ($i < count($galeri)): ?>

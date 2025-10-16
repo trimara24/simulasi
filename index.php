@@ -17,7 +17,7 @@
   <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="img/gerbang.png" class="d-block w-100" alt="Gerbang Sekolah" />
+        <img src="img/gerbang.png" class="d-block w-100" alt="Gerbang Sekolah" width="800" height="800" />
       </div>
     </div>
   </div>
